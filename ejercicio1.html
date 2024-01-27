@@ -7,7 +7,18 @@
 </head>
 <body>
     <script>
-        
+        let numeroDeElementos=18;
+        let serieFibonacci=[0];
+        let x=0;
+        let y=1;
+        let z=0;
+        for (let i=1; i<numeroDeElementos; i++){
+            serieFibonacci.push(x+y);
+            x=serieFibonacci[z];
+            y=serieFibonacci[i];
+            z++;
+        }
+        console.log(serieFibonacci);
     </script>
 </body>
 </html>
